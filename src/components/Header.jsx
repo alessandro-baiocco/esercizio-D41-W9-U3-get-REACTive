@@ -1,18 +1,15 @@
 const Header = (props) => {
   return (
-    <header className="App-header">
-      <img
-        src={
-          "https://www.google.com/url?sa=i&url=https%3A%2F%2Fdestiny.fandom.com%2Fwiki%2FEuropa&psig=AOvVaw04QzKf_ZyiTkmTYH08XBYi&ust=1693908726711000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJCq8PHbkIEDFQAAAAAdAAAAABAE"
-        }
-        className="App-logo"
-        alt="logo"
-      />
+    <header
+      className="App-header"
+      style={{ backgroundColor: "blue", padding: "2rem", minHeight: "50px", maxHeight: "100px" }}
+    >
+      <img src={props.src} className="App-logo" alt="logo" style={{ maxHeight: "50px" }} />
       <p>
         Edit <code>src/App.js</code> and save to reload.
       </p>
-      <a className="App-link" href={props.image} target="_blank" rel="noopener noreferrer">
-        Learn React
+      <a className="App-link" href="https://www.google.it/?hl=it" target="_blank" rel="noopener noreferrer">
+        ehi tu, {props.nome} Learn React
       </a>
     </header>
   );
