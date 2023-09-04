@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  color: white;
+  font-size: 40px;
+}
+input {
+  background-color: #61dafb;
+  color: red;
+}
